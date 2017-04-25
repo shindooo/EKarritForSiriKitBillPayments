@@ -7,14 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE36D10A1EAF312D002159E1 /* instructor.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36D1091EAF312D002159E1 /* instructor.png */; };
+		CE4AE7951EAF922700FDAD26 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CE4AE7941EAF922700FDAD26 /* README.md */; };
 		CEC2B52E1EAC9C6A006C0E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B52D1EAC9C6A006C0E2B /* AppDelegate.swift */; };
 		CEC2B5301EAC9C6A006C0E2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B52F1EAC9C6A006C0E2B /* ViewController.swift */; };
 		CEC2B5331EAC9C6A006C0E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B5311EAC9C6A006C0E2B /* Main.storyboard */; };
 		CEC2B5351EAC9C6A006C0E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B5341EAC9C6A006C0E2B /* Assets.xcassets */; };
 		CEC2B5381EAC9C6A006C0E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B5361EAC9C6A006C0E2B /* LaunchScreen.storyboard */; };
+		CEC2B5471EACA424006C0E2B /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B5461EACA424006C0E2B /* IntentHandler.swift */; };
+		CEC2B5501EACA425006C0E2B /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC2B54F1EACA425006C0E2B /* IntentsUI.framework */; };
+		CEC2B5531EACA425006C0E2B /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B5521EACA425006C0E2B /* IntentViewController.swift */; };
+		CEC2B5561EACA425006C0E2B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B5541EACA425006C0E2B /* MainInterface.storyboard */; };
+		CEC2B55A1EACA425006C0E2B /* eKarritIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEC2B54D1EACA425006C0E2B /* eKarritIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEC2B55D1EACA425006C0E2B /* eKarritIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEC2B5441EACA424006C0E2B /* eKarritIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CEC2B5581EACA425006C0E2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC2B5221EAC9C6A006C0E2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC2B54C1EACA425006C0E2B;
+			remoteInfo = eKarritIntentsUI;
+		};
+		CEC2B55B1EACA425006C0E2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC2B5221EAC9C6A006C0E2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC2B5431EACA424006C0E2B;
+			remoteInfo = eKarritIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEC2B5641EACA425006C0E2B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEC2B55A1EACA425006C0E2B /* eKarritIntentsUI.appex in Embed App Extensions */,
+				CEC2B55D1EACA425006C0E2B /* eKarritIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CE36D1091EAF312D002159E1 /* instructor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instructor.png; sourceTree = "<group>"; };
+		CE4AE7941EAF922700FDAD26 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CEC2B52A1EAC9C6A006C0E2B /* eKarrit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eKarrit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC2B52D1EAC9C6A006C0E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC2B52F1EAC9C6A006C0E2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +64,15 @@
 		CEC2B5341EAC9C6A006C0E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC2B5371EAC9C6A006C0E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC2B5391EAC9C6A006C0E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC2B53F1EACA15A006C0E2B /* eKarrit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eKarrit.entitlements; sourceTree = "<group>"; };
+		CEC2B5441EACA424006C0E2B /* eKarritIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = eKarritIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC2B5461EACA424006C0E2B /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		CEC2B5481EACA424006C0E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC2B54D1EACA425006C0E2B /* eKarritIntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = eKarritIntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC2B54F1EACA425006C0E2B /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		CEC2B5521EACA425006C0E2B /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		CEC2B5551EACA425006C0E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CEC2B5571EACA425006C0E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,13 +83,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEC2B5411EACA424006C0E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2B54A1EACA425006C0E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2B5501EACA425006C0E2B /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CEC2B5211EAC9C6A006C0E2B = {
 			isa = PBXGroup;
 			children = (
+				CE4AE7941EAF922700FDAD26 /* README.md */,
 				CEC2B52C1EAC9C6A006C0E2B /* eKarrit */,
+				CEC2B5451EACA424006C0E2B /* eKarritIntents */,
+				CEC2B5511EACA425006C0E2B /* eKarritIntentsUI */,
+				CEC2B54E1EACA425006C0E2B /* Frameworks */,
 				CEC2B52B1EAC9C6A006C0E2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				CEC2B52A1EAC9C6A006C0E2B /* eKarrit.app */,
+				CEC2B5441EACA424006C0E2B /* eKarritIntents.appex */,
+				CEC2B54D1EACA425006C0E2B /* eKarritIntentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +126,7 @@
 		CEC2B52C1EAC9C6A006C0E2B /* eKarrit */ = {
 			isa = PBXGroup;
 			children = (
+				CEC2B53F1EACA15A006C0E2B /* eKarrit.entitlements */,
 				CEC2B52D1EAC9C6A006C0E2B /* AppDelegate.swift */,
 				CEC2B52F1EAC9C6A006C0E2B /* ViewController.swift */,
 				CEC2B5311EAC9C6A006C0E2B /* Main.storyboard */,
@@ -62,6 +135,34 @@
 				CEC2B5391EAC9C6A006C0E2B /* Info.plist */,
 			);
 			path = eKarrit;
+			sourceTree = "<group>";
+		};
+		CEC2B5451EACA424006C0E2B /* eKarritIntents */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2B5461EACA424006C0E2B /* IntentHandler.swift */,
+				CEC2B5481EACA424006C0E2B /* Info.plist */,
+			);
+			path = eKarritIntents;
+			sourceTree = "<group>";
+		};
+		CEC2B54E1EACA425006C0E2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2B54F1EACA425006C0E2B /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEC2B5511EACA425006C0E2B /* eKarritIntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2B5521EACA425006C0E2B /* IntentViewController.swift */,
+				CE36D1091EAF312D002159E1 /* instructor.png */,
+				CEC2B5541EACA425006C0E2B /* MainInterface.storyboard */,
+				CEC2B5571EACA425006C0E2B /* Info.plist */,
+			);
+			path = eKarritIntentsUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +175,52 @@
 				CEC2B5261EAC9C6A006C0E2B /* Sources */,
 				CEC2B5271EAC9C6A006C0E2B /* Frameworks */,
 				CEC2B5281EAC9C6A006C0E2B /* Resources */,
+				CEC2B5641EACA425006C0E2B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEC2B5591EACA425006C0E2B /* PBXTargetDependency */,
+				CEC2B55C1EACA425006C0E2B /* PBXTargetDependency */,
 			);
 			name = eKarrit;
 			productName = eKarrit;
 			productReference = CEC2B52A1EAC9C6A006C0E2B /* eKarrit.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CEC2B5431EACA424006C0E2B /* eKarritIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC2B5611EACA425006C0E2B /* Build configuration list for PBXNativeTarget "eKarritIntents" */;
+			buildPhases = (
+				CEC2B5401EACA424006C0E2B /* Sources */,
+				CEC2B5411EACA424006C0E2B /* Frameworks */,
+				CEC2B5421EACA424006C0E2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eKarritIntents;
+			productName = eKarritIntents;
+			productReference = CEC2B5441EACA424006C0E2B /* eKarritIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CEC2B54C1EACA425006C0E2B /* eKarritIntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC2B55E1EACA425006C0E2B /* Build configuration list for PBXNativeTarget "eKarritIntentsUI" */;
+			buildPhases = (
+				CEC2B5491EACA425006C0E2B /* Sources */,
+				CEC2B54A1EACA425006C0E2B /* Frameworks */,
+				CEC2B54B1EACA425006C0E2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eKarritIntentsUI;
+			productName = eKarritIntentsUI;
+			productReference = CEC2B54D1EACA425006C0E2B /* eKarritIntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +233,21 @@
 				ORGANIZATIONNAME = T.Shindou;
 				TargetAttributes = {
 					CEC2B5291EAC9C6A006C0E2B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZSBA4268U7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					CEC2B5431EACA424006C0E2B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZSBA4268U7;
+						ProvisioningStyle = Automatic;
+					};
+					CEC2B54C1EACA425006C0E2B = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = ZSBA4268U7;
 						ProvisioningStyle = Automatic;
@@ -115,6 +268,8 @@
 			projectRoot = "";
 			targets = (
 				CEC2B5291EAC9C6A006C0E2B /* eKarrit */,
+				CEC2B5431EACA424006C0E2B /* eKarritIntents */,
+				CEC2B54C1EACA425006C0E2B /* eKarritIntentsUI */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +285,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEC2B5421EACA424006C0E2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2B54B1EACA425006C0E2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2B5561EACA425006C0E2B /* MainInterface.storyboard in Resources */,
+				CE36D10A1EAF312D002159E1 /* instructor.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +308,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4AE7951EAF922700FDAD26 /* README.md in Sources */,
 				CEC2B5301EAC9C6A006C0E2B /* ViewController.swift in Sources */,
 				CEC2B52E1EAC9C6A006C0E2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEC2B5401EACA424006C0E2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2B5471EACA424006C0E2B /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2B5491EACA425006C0E2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2B5531EACA425006C0E2B /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEC2B5591EACA425006C0E2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC2B54C1EACA425006C0E2B /* eKarritIntentsUI */;
+			targetProxy = CEC2B5581EACA425006C0E2B /* PBXContainerItemProxy */;
+		};
+		CEC2B55C1EACA425006C0E2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC2B5431EACA424006C0E2B /* eKarritIntents */;
+			targetProxy = CEC2B55B1EACA425006C0E2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEC2B5311EAC9C6A006C0E2B /* Main.storyboard */ = {
@@ -159,6 +360,14 @@
 				CEC2B5371EAC9C6A006C0E2B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CEC2B5541EACA425006C0E2B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC2B5551EACA425006C0E2B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -262,7 +471,9 @@
 		CEC2B53D1EAC9C6A006C0E2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = eKarrit/eKarrit.entitlements;
 				DEVELOPMENT_TEAM = ZSBA4268U7;
 				INFOPLIST_FILE = eKarrit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -275,12 +486,66 @@
 		CEC2B53E1EAC9C6A006C0E2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = eKarrit/eKarrit.entitlements;
 				DEVELOPMENT_TEAM = ZSBA4268U7;
 				INFOPLIST_FILE = eKarrit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.gr.java-conf.shindooo.eKarrit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CEC2B55F1EACA425006C0E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZSBA4268U7;
+				INFOPLIST_FILE = eKarritIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.gr.java-conf.shindooo.eKarrit.eKarritIntentsUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEC2B5601EACA425006C0E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZSBA4268U7;
+				INFOPLIST_FILE = eKarritIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.gr.java-conf.shindooo.eKarrit.eKarritIntentsUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CEC2B5621EACA425006C0E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZSBA4268U7;
+				INFOPLIST_FILE = eKarritIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.gr.java-conf.shindooo.eKarrit.eKarritIntents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEC2B5631EACA425006C0E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZSBA4268U7;
+				INFOPLIST_FILE = eKarritIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.gr.java-conf.shindooo.eKarrit.eKarritIntents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +569,25 @@
 				CEC2B53E1EAC9C6A006C0E2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC2B55E1EACA425006C0E2B /* Build configuration list for PBXNativeTarget "eKarritIntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2B55F1EACA425006C0E2B /* Debug */,
+				CEC2B5601EACA425006C0E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC2B5611EACA425006C0E2B /* Build configuration list for PBXNativeTarget "eKarritIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2B5621EACA425006C0E2B /* Debug */,
+				CEC2B5631EACA425006C0E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

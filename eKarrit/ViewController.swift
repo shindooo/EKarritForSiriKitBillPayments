@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  eKarrit
 //
-//  Created by 進藤 孝司 on 2017/04/23.
+//  Created by T.Shindou on 2017/04/23.
 //  Copyright © 2017年 T.Shindou. All rights reserved.
 //
 

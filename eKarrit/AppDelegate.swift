@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  eKarrit
 //
-//  Created by 進藤 孝司 on 2017/04/23.
+//  Created by T.Shindou on 2017/04/23.
 //  Copyright © 2017年 T.Shindou. All rights reserved.
 //
 
 import UIKit
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+
+        INPreferences.requestSiriAuthorization { status in
+            if case .authorized = status {
+                print("authorized")
+            } else {
+                print("not authorized")
+            }
+        }
+
+            return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
