@@ -37,7 +37,7 @@ class IntentHandler: INExtension, INPayBillIntentHandling {
             if let currencyCode = transactionAmount.amount?.currencyCode, currencyCode == "JPY" {
                 // 日本円ならパラメータとして受け入れる
                 
-                // 検証結果を表現する型は、パラメータ検証メソッドによって異なる（ここではINPaymentAmountResolutionResult）
+                // successの引数には解決済みのパラメータを渡す
                 completion(INPaymentAmountResolutionResult.success(with: transactionAmount))
             } else {
                 // 日本円以外はサポートしない（「その金額は扱えません」とSiriが応答する）
